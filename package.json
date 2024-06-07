@@ -1,0 +1,48 @@
+{
+  "name": "uncommunity-backend",
+  "version": "1.0.0",
+  "description": "UN Community back end code.",
+  "main": "app.js",
+  "engines": {
+    "node": "14.17.5"
+  },
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "set NODE_ENV=development && nodemon app.js",
+    "uat": "set NODE_ENV=development && nodemon app.js",
+    "prod": "set NODE_ENV=production && nodemon app.js",
+    "prod-test": "export NODE_ENV=production && nodemon app.js",
+    "pm2-prod": "NODE_ENV=production pm2 start app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dreamlogicinfosystems/UNCommunity-backend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dreamlogicinfosystems/UNCommunity-backend/issues"
+  },
+  "homepage": "https://github.com/dreamlogicinfosystems/UNCommunity-backend#readme",
+  "dependencies": {
+    "aws-sdk": "^2.1075.0",
+    "axios": "^1.4.0",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.1",
+    "cheerio": "^1.0.0-rc.12",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.2",
+    "file-type": "^16.3.0",
+    "googleapis": "^123.0.0",
+    "jsonwebtoken": "^8.5.1",
+    "marked": "^5.1.0",
+    "mongoose": "^6.1.6",
+    "node-cron": "^3.0.2",
+    "node-schedule": "^2.1.1",
+    "nodemailer": "^6.7.2",
+    "puppeteer": "^13.7.0",
+    "uuid": "^8.3.2"
+  }
+}

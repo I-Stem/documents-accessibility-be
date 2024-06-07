@@ -1,0 +1,8 @@
+.env
+/node_modules
+/dist/*
+
+# environment files
+/config/environments/*
+/helpers/google-credentials-old.json
+/helpers/google-credentials.json
